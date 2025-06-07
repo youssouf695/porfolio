@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import ProjectCard from "@/components/ProjectCard";
+import Footer from "@/components/Footer";
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState("Tous");
@@ -33,16 +34,16 @@ export default function Projects() {
       screenshots: [
         "/images/fs/fs2.png",
         "/images/fs/fs3.png",
-        "/images/fs/fs4.png"
+        "/images/fs/fs4.png",
       ]
     },
     {
       title: "Porfolio",
       description: "Un site de porfolio conçu de façon dynamique pour etre adapter à des clients particuliers",
-      image: "/images/porf",
-      demoLink: "#",
-    //   codeLink: "#",
-      githDisabled: true,
+      image: "/images/porfolio/porf1.png",
+      demoLink: "https://njupuen.vercel.app",
+      codeLink: "https://github.com/youssouf695/porfolio",
+      // githDisabled: true,
       category: "Design",
       screenshots: [
         "/images/porfolio/porf1.png",
@@ -118,6 +119,7 @@ export default function Projects() {
           </div>
         </div>
       </main>
+      <Footer/>
     </>
   );
 }

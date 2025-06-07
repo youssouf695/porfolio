@@ -38,31 +38,44 @@ export default function ProjectCard({
                   alt={`screenshot-${i}`}
                   width={100}
                   height={70}
-                  className="rounded-md border hover:scale-105 transition"
+                  className="rounded-md border object-cover w-full h-12 transition"
                 />
               ))}
             </div>
           )}
         </div>
 
+        {/* Boutons */}
         <div className="mt-4 flex flex-wrap gap-3">
+          {/* Lien Démo */}
           <a
-            href={demoLink}
+            href={demoDisabled ? undefined : demoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className={` ${demoDisabled ? "cursor-not-allowed" : "dark:hover:bg-gray-500 hover:bg-blue-700"} bg-gray-600 text-gray-100 px-4 py-2 rounded-lg flex items-center gap-2 text-sm transition`}
+            className={`px-4 py-2 rounded-lg flex items-center gap-2 text-sm transition ${
+              demoDisabled
+                ? "bg-gray-600 text-gray-400 cursor-not-allowed opacity-50 pointer-events-none"
+                : "bg-gray-600 text-gray-100 hover:bg-blue-700"
+            }`}
           >
             <ExternalLink size={16} /> Démo
           </a>
+
+          {/* Lien Code */}
           <a
-            href={codeLink}
+            href={githDisabled ? undefined : codeLink}
             target="_blank"
             rel="noopener noreferrer"
-            className={` ${githDisabled ? "cursor-not-allowed" : "hover:bg-gray-700 hover:text-white"} border border-gray-300 text-blue-400 dark:text-blue-400 px-4 py-2 rounded-lg flex items-center gap-2 text-sm transition`}
+            className={`px-4 py-2 rounded-lg flex items-center gap-2 text-sm transition border ${
+              githDisabled
+                ? "border-gray-600 text-gray-400 cursor-not-allowed opacity-50 pointer-events-none"
+                : "border-gray-300 text-blue-400 hover:bg-gray-700 hover:text-white"
+            }`}
           >
             <Github size={16} /> Code
           </a>
 
+          {/* Bouton Iframe démo */}
           {!demoDisabled && demoLink && (
             <button
               onClick={() => setShowDemo(!showDemo)}

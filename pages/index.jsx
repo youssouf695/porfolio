@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Head from "next/head";
 import Header from "@/components/Header";
-import Projects from "./projects";
+import IndexProjects from "./indexProjects";
+import Experiences from "./experiences";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -54,8 +56,10 @@ export default function Home() {
           </div>
         </div>
 
+      <IndexProjects />
       </main>
-      <Projects />
+      <Experiences/>
+      <Footer/>
     </>
   );
 }

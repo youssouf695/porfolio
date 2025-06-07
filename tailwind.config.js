@@ -13,6 +13,15 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        "fade-in": "fadeIn 0.7s ease-out forwards",
+      },
+      keyframes: {
+        fadeIn: {
+          from: { opacity: 0, transform: "translateY(40px)" },
+          to: { opacity: 1, transform: "translateY(0)" },
+        },
+      },
     },
   },
   plugins: [],

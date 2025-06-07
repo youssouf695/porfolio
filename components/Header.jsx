@@ -7,7 +7,7 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="bg-gray-900 dark:bg-black text-gray-400 mb-6 shadow-md shadow-gray-700 fixed w-full">
+    <header className="fixed w-full z-50 bg-gray-900 dark:bg-black text-gray-400 shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo / Nom */}
         <Link href="/" className="text-2xl font-bold text-white">
@@ -18,8 +18,8 @@ export default function Header() {
         <nav className="hidden md:flex gap-6 font-bold">
           <Link href="/" className="hover:text-white duration-500 hover:scale-110 ">ACCUEIL</Link>
           <Link href="/projects" className="hover:text-white duration-500 hover:scale-110">PROJECTS</Link>
-          <Link href="/contact" className="hover:text-white duration-500 hover:scale-110">COMPETENCES</Link>
-          <Link href="/contact" className="hover:text-white duration-500 hover:scale-110">MON CV</Link>
+          <Link href="/competences" className="hover:text-white duration-500 hover:scale-110">COMPETENCES</Link>
+          <Link href="/cv_NjupuenYoussoufa.pdf" className="hover:text-white duration-500 hover:scale-110">MON CV</Link>
         </nav>
 
         {/* Menu mobile toggle */}
@@ -48,8 +48,8 @@ export default function Header() {
         <div className=" md:hidden px-4 pb-4 space-y-2 font-bold">
           <Link href="/" className="block text-gray-400 hover:text-white duration-500 hover:translate-x-0 ">ACCUEIL</Link>
           <Link href="/projects" className="block text-gray-400 hover:text-white duration-500 hover:translate-x-0 ">PROJECTS</Link>
-          <Link href="/contact" className="block text-gray-400 hover:text-white duration-500 hover:translate-x-0 ">COMPETENCES</Link>
-          <Link href="/contact" className="block text-gray-400 hover:text-white duration-500 hover:translate-x-0 ">MON CV</Link>
+          <Link href="/competences" className="block text-gray-400 hover:text-white duration-500 hover:translate-x-0 ">COMPETENCES</Link>
+          <Link href="/cv_NjupuenYoussoufa.pdf" className="block text-gray-400 hover:text-white duration-500 hover:translate-x-0 ">MON CV</Link>
         </div>
       )}
     </header>
