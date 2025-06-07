@@ -57,6 +57,7 @@ export default function Projects() {
       image: "/images/sim/sim0.png",
     //   demoLink: "#",
       codeLink: "#",
+      demoDisabled: true,
       githDisabled: false,
       category: "Mobile",
       screenshots: [
