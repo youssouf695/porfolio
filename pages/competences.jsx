@@ -26,7 +26,7 @@ export default function Competences() {
 
         {/* Développement Web/Mobile */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4 text-blue-400">💻 Développement Web/Mobile</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-blue-400">Développement Web/Mobile</h2>
           <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {[
               "React.js",
@@ -35,6 +35,7 @@ export default function Competences() {
               "React Native",
               "Flutter",
               "HTML, CSS",
+              "PHP",
               "Tailwind CSS",
               "JavaScript",
             ].map((item) => (
@@ -48,10 +49,11 @@ export default function Competences() {
 
         {/* Outils & Soft Skills */}
         <section>
-          <h2 className="text-2xl font-semibold mb-4 text-blue-400">🛠️ Outils & Soft Skills</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-blue-400">Outils & Autres</h2>
           <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {[
               "Git / GitHub",
+              "Vercel",
               "Sentry (gestion des erreurs)",
               "Gestion de projets",
               "Travail en équipe",

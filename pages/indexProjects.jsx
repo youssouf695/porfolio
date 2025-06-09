@@ -52,7 +52,7 @@ export default function IndexProjects() {
       <main className="min-h-screen bg-gray-900 dark:bg-black px-4 pt-20 text-white dark:text-white">
         <div className="container mx-auto">
           <h1 className="bg-gray-300 rounded text-gray-900 dark:text-black w-full flex items-center justify-center h-20 text-4xl font-bold mb-8 text-center">
-            Quelques Projets
+            Mes Projets
           </h1>
 
           {/* GRILLE DES PROJETS */}

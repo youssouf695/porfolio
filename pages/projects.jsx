@@ -79,7 +79,21 @@ export default function Projects() {
           "/images/ia/ia2.png",
           "/images/ia/ia3.png",
         ]
-      }
+      },
+      {
+        title: "IUT Document Stage",
+        description: "Un espace documentaire dédié aux étudiants de l'IUT de Ngaoundéré, leur permettant de télécharger tous les documents nécessaires pour constituer et compléter leurs dossiers de mise en stage",
+        image: "/images/stageiut/stage2.png",
+        demoLink: "https://iutnderedocstage.vercel.app/",
+        codeLink: "https://github.com/youssouf695/DocStage",
+        // githDisabled: true,
+        category: "web",
+        screenshots: [
+          "/images/stageiut/stage2.png",
+          "/images/stageiut/stage1.png",
+          "/images/stageiut/stage2.png",
+        ]
+      },
   ];
   
 
