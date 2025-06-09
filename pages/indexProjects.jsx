@@ -49,9 +49,9 @@ export default function IndexProjects() {
     <>
       <Head><title>Mes Projets | Youssouf</title></Head>
 
-      <main className="min-h-screen bg-gray-900 dark:bg-black px-4 pt-20 text-white dark:text-white">
+      <main className="min-h-screen px-4 pt-20 text-white dark:text-white">
         <div className="container mx-auto">
-          <h1 className="bg-gray-300 rounded text-gray-900 dark:text-black w-full flex items-center justify-center h-20 text-4xl font-bold mb-8 text-center">
+          <h1 className=" rounded border  text-white w-full flex items-center justify-center h-20 text-4xl font-bold mb-8 text-center">
             Mes Projets
           </h1>
 

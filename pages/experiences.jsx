@@ -69,7 +69,7 @@ export default function Experiences() {
 
   return (
     <main className="min-h-screen bg-gray-900 dark:bg-black px-4 pt-24 text-white dark:text-white">
-        <h1 className="bg-gray-300 rounded text-gray-900 dark:text-black w-full flex items-center justify-center h-20 text-4xl font-bold mb-8 text-center">
+        <h1 className=" rounded border text-white w-full flex items-center justify-center h-20 text-4xl font-bold mb-8 text-center">
           Mon Parcours
         </h1>
       <div className="max-w-4xl mx-auto">
